@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:background="@color/color_white"
+    >
+    <!--상단 로그인바-->
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_marginTop="30dp"-->
+        <!--android:layout_marginBottom="25dp"-->
+        <!--android:gravity="center"-->
+        <!--android:text="LOGIN"-->
+        <!--android:textColor="@color/color_pup"-->
+        <!--android:textSize="15dp"-->
+        <!--app:fontFamily="sans-serif" />-->
+
+    <ImageView
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/toyou"
+        android:clickable="true"
+        />
+    <ImageView
+        android:layout_marginBottom="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/heart1"
+        />
+
+
+    <!--아이디입력칸-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="310dp"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_loginid"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="E-mail"
+            android:singleLine="true"
+            android:imeOptions="actionNext"
+            android:lines="1"
+            android:maxLength="30"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!--비밀번호입력칸-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="310dp"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_loginpw"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Password"
+                android:layout_marginBottom="10dp"
+                android:lines="1"
+                android:imeOptions="actionNext"
+                android:maxLength="30"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <CheckBox
+            android:id="@+id/pwcheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="숨김"
+            android:textColor="@color/color_dark"
+            android:checked="true"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/autologin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Auto Login"
+        android:textColor="@color/color_dark"
+        android:checked="false"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="login"
+        android:textSize="20dp"
+        android:textColor="@color/color_white"
+        android:background="@drawable/btn_sky"
+        android:foreground="?android:selectableItemBackground"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="OR"
+        android:layout_marginBottom="5dp"/>
+
+    <Button
+        android:id="@+id/bt_signup"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Sign up"
+        android:textSize="20dp"
+        android:textColor="@color/color_white"
+        android:background="@drawable/btn_ypup"
+        android:foreground="?android:selectableItemBackground"
+        android:layout_marginBottom="25dp"/>
+
+
+</LinearLayout>

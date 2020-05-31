@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    tools:context=".Activity.Activity_main">
+
+    <ImageView
+        android:id="@+id/top_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:padding="10dp"
+        android:src="@drawable/s_toyou"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/menubar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:weightSum="5"
+        app:layout_constraintTop_toBottomOf="@+id/top_logo">
+
+        <TextView
+            android:id="@+id/menu_dday"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/color_sky"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="디데이"
+            android:textColor="@color/color_pup"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/menu_chat"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/color_sky"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="채팅"
+            android:textColor="@color/color_white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/menu_board"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/color_sky"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="게시판"
+            android:textColor="@color/color_white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/menu_gallery"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/color_sky"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="사진첩"
+            android:textColor="@color/color_white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/menu_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/color_sky"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="설정"
+            android:textColor="@color/color_white"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menubar">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_dday_myimage"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ringicon" />
+
+        <TextView
+            android:id="@+id/tv_dday_mynick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="이름"
+            android:textColor="@color/color_dark"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:src="@drawable/heart1"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menubar" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/menubar">
+
+        <TextView
+            android:id="@+id/tv_dday_younick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="이름"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/color_dark"
+            android:layout_marginRight="10dp"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_dday_youimage"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/ringicon" />
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_setday"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/iconfinder_calendar_285670"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_dday_setday"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.664"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/tv_dday_today"
+        app:layout_constraintVertical_bias="0.4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="날짜설정"
+        android:textSize="10dp"
+        android:textColor="@color/color_dark"
+        app:layout_constraintEnd_toEndOf="@+id/bt_setday"
+        app:layout_constraintStart_toStartOf="@+id/bt_setday"
+        app:layout_constraintTop_toBottomOf="@+id/bt_setday" />
+
+    <TextView
+        android:id="@+id/tv_today"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="25dp"
+        android:text="오늘날짜 : "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/tv_dday_today"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="today"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginLeft="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_today"
+        app:layout_constraintStart_toEndOf="@+id/tv_today"
+        app:layout_constraintTop_toTopOf="@+id/tv_today"></TextView>
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="시작날짜 : "
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="@+id/tv_today"
+        app:layout_constraintTop_toBottomOf="@+id/tv_today" />
+
+    <TextView
+        android:id="@+id/tv_dday_setday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="setday"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/tv_dday_today"
+        app:layout_constraintTop_toBottomOf="@+id/tv_today"></TextView>
+
+    <TextView
+        android:id="@+id/tv_dday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="000일"
+        android:textColor="@color/color_pup"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_dday_setday" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/Dday_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_dday" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

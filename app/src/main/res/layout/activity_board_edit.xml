@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context=".Activity.Activity_board_write">
+
+    <ImageView
+        android:id="@+id/top_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:padding="10dp"
+        android:src="@drawable/s_toyou"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white"
+        android:orientation="vertical"
+        android:padding="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/top_logo">
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_sky" />
+
+            <ImageView
+                android:id="@+id/iv_board_edit_img"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_gravity="center"
+                android:src="@drawable/heart"
+                android:layout_marginTop="10dp"/>
+
+
+            <EditText
+                android:id="@+id/et_board_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:layout_margin="4dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:text="오늘또한 집가고싶어"
+                android:textColor="@color/color_dark"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:background="@drawable/imageview_round"
+                android:gravity="top"
+                android:inputType="textMultiLine"
+                android:scrollbars="vertical"/>
+
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/bt_board_edit_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_ypup"
+        android:text="사진수정"
+        android:textColor="@color/color_white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/top_logo" />
+
+    <Button
+        android:id="@+id/bt_board_edit_exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_sign"
+        android:text="나가기"
+        android:textColor="@color/color_white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/bt_board_edit_ok"
+        app:layout_constraintStart_toEndOf="@+id/bt_board_edit_photo" />
+
+    <Button
+        android:id="@+id/bt_board_edit_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_sky"
+        android:text="확 인"
+        android:textColor="@color/color_white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/top_logo" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/iv_chat_image"-->
+            <!--android:src="@drawable/main_text_ss"/>-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_chat_user"
+            android:hint=" "
+
+            android:textSize="15sp"
+            android:textColor="@color/color_dark"/>
+        <TextView
+            android:id="@+id/tv_chat_massage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint=""
+            android:textSize="20sp"
+            android:textColor="@color/color_dark"
+            android:layout_marginRight="5dp"/>
+
+        <TextView
+            android:id="@+id/tv_chat_date"
+            android:textSize="14sp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:hint=""/>
+
+        </LinearLayout>
+

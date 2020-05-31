@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Activity_setting">
+
+    <ImageView
+        android:id="@+id/top_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:padding="10dp"
+        android:src="@drawable/s_toyou"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/menubar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:weightSum="5"
+        app:layout_constraintTop_toBottomOf="@+id/top_logo">
+
+        <TextView
+            android:id="@+id/menu_dday"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/color_sky"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="디데이"
+            android:textColor="@color/color_white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/menu_chat"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/color_sky"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="채팅"
+            android:textColor="@color/color_white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/menu_board"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/color_sky"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="게시판"
+            android:textColor="@color/color_white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/menu_gallery"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/color_sky"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="사진첩"
+            android:textColor="@color/color_white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/menu_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/color_sky"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="내정보"
+            android:textColor="@color/color_pup"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_setting_proimg"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:clickable="true"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menubar" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.36"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_setting_proimg">
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="이    름 : "
+                android:textColor="@color/color_dark"
+                android:textSize="23sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="연    인 :"
+                android:textColor="@color/color_dark"
+                android:textSize="23sp"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="코    드 :"
+                android:textColor="@color/color_dark"
+                android:textSize="23sp"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="이메일 :"
+                android:textColor="@color/color_dark"
+                android:textSize="23sp"
+                android:layout_marginBottom="10dp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_setting_myname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="땡댕이"
+                android:textColor="@color/color_dark"
+                android:textSize="23sp"
+                android:textStyle="bold"
+                android:gravity="left"/>
+
+            <TextView
+                android:id="@+id/tv_setting_youname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="daf"
+                android:textColor="@color/color_dark"
+                android:textSize="23sp"
+                android:textStyle="bold"
+                android:gravity="left"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:id="@+id/tv_setting_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="daf"
+                android:textColor="@color/color_dark"
+                android:textSize="23sp"
+                android:textStyle="bold"
+                android:gravity="left"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/tv_setting_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="daf"
+                android:textColor="@color/color_dark"
+                android:textSize="23sp"
+                android:textStyle="bold"
+                android:gravity="left"
+                android:layout_marginBottom="10dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_setting_logout"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:background="@drawable/btn_pup"
+        android:text="LOG OUT"
+        android:textColor="@color/color_white"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5" />
+
+    <TextView
+        android:id="@+id/tv_signupor1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="OR"
+        app:layout_constraintTop_toBottomOf="@+id/bt_setting_pwre"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/bt_setting_pwre"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:background="@drawable/btn_pup"
+        android:backgroundTint="@color/color_pink_white"
+        android:foreground="?android:selectableItemBackground"
+        android:text="비밀번호 수정"
+        android:textColor="@color/color_white"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_signupor2" />
+
+    <TextView
+        android:id="@+id/tv_signupor2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="OR"
+        app:layout_constraintTop_toBottomOf="@+id/bt_setting_logout"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/bt_setting_delete"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:background="@drawable/btn_pup"
+        android:backgroundTint="@color/color_sky"
+        android:foreground="?android:selectableItemBackground"
+        android:text="회원탈퇴"
+        android:textColor="@color/color_white"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_signupor1" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
